@@ -1,3 +1,4 @@
+// Direct exports to avoid import issues
 export interface Client {
   id: string;
   name: string;
@@ -18,6 +19,13 @@ export interface Project {
 export interface Payment {
   projectId: string;
   amount: number;
+  date: string;
+}
+
+export interface Message {
+  id: string;
+  clientId: string;
+  text: string;
   date: string;
 }
 
@@ -51,15 +59,6 @@ export function filterProjectsByPayment(
   return projects.filter(p => p.paymentStatus === paymentStatus);
 }
 
-/**
- * Searches through an array of objects and returns a new array containing
- * only the objects that have a 'name' or 'title' property that includes
- * the given query (case-insensitive).
- *
- * @param items - The array of objects to search through.
- * @param query - The query to search for.
- * @returns A new array containing only the objects that matched the query.
- */
 export function searchByName<T extends { name?: string; title?: string }>(
   items: T[],
   query: string
@@ -67,9 +66,7 @@ export function searchByName<T extends { name?: string; title?: string }>(
   const lower = query.toLowerCase();
   return items.filter(
     i => 
-      // If the object has a 'name' property and it includes the query (case-insensitive)
       (i.name && i.name.toLowerCase().includes(lower)) ||
-      // If the object has a 'title' property and it includes the query (case-insensitive)
       (i.title && i.title.toLowerCase().includes(lower))
   );
 }
