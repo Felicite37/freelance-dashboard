@@ -1,8 +1,8 @@
-# 💼 Freelance Dashboard
+#  Freelance Dashboard
 
 A modern, responsive dashboard application for freelancers to manage clients, projects, payments, and communications all in one place.
 
-## ✨ Features
+##  Features
 
 - **Client Management** - Track all your clients with their contact information and location
 - **Project Tracking** - Monitor project status (pending, in-progress, completed) and budgets
@@ -11,7 +11,7 @@ A modern, responsive dashboard application for freelancers to manage clients, pr
 - **Dashboard Statistics** - Get quick insights into your freelance business at a glance
 - **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 - **React 18** - Modern React with hooks and functional components
 - **TypeScript** - Type-safe code for better development experience
@@ -20,12 +20,12 @@ A modern, responsive dashboard application for freelancers to manage clients, pr
 - **Context API** - State management with React Context and useReducer
 - **Axios** - HTTP client for API requests
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Node.js (v16 or higher)
 - npm or yarn package manager
 
-## 🛠️ Installation
+##  Installation
 
 1. Clone the repository:
 ```bash
