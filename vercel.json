@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd freelance-dashboard && npm install && npm run build",
+  "outputDirectory": "freelance-dashboard/dist",
+  "installCommand": "cd freelance-dashboard && npm install"
+}
